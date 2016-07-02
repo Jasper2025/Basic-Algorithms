@@ -16,4 +16,4 @@ Notes:
 
 BasicSortingAlgorithms.cs contains all the algorithm implementations stated above.
 
-Test.cs preforms these algorithms on a randomly 10 element integer generated array. 
+Test.cs preforms these algorithms on a  10 integer randomly generated array. 
