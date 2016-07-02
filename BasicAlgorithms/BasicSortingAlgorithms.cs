@@ -1,6 +1,6 @@
 namespace BasicAlgorithms
 {
-    public partial class BasicSortingAlgorithms
+    public partial class BasicSortingAlgorithms /* Contains BubbleSort, InsertionSort, SelectionSort */
     {
         /* https://en.wikipedia.org/wiki/Bubble_sort */
         public static void BubbleSort(int[] randomArray)
@@ -55,7 +55,7 @@ namespace BasicAlgorithms
         }//SelectionSort
     }
 
-    public partial class BasicSortingAlgorithms
+    public partial class BasicSortingAlgorithms /* Contains MergeSort */
     {
         /* https://en.wikipedia.org/wiki/Merge_sort */
         private static void Merge(int[] left, int[] right, int[] result)
@@ -114,7 +114,7 @@ namespace BasicAlgorithms
         }//MergeSort
     }
 
-    public partial class BasicSortingAlgorithms
+    public partial class BasicSortingAlgorithms /* Contains QuickSort */
     {
         /* https://en.wikipedia.org/wiki/Quicksort */
 
