@@ -14,6 +14,6 @@ C# Implementation of following algorithms:
 
 Notes:
 
-BasicSortingAlgorithms.cs contains all the algorithm implementations.
+BasicSortingAlgorithms.cs contains all the algorithm implementations stated above.
 
-Test.cs preforms these algorithms on a randomly generated array. 
+Test.cs preforms these algorithms on a randomly 10 element integer generated array. 
