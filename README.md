@@ -11,3 +11,9 @@ C# Implementation of following algorithms:
 4. Merge Sort
 
 5. Quick Sort
+
+Notes:
+
+BasicSortingAlgorithms.cs contains all the algorithm implementations.
+
+Test.cs preforms these algorithms on a randomly generated array. 
