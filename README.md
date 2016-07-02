@@ -1,9 +1,13 @@
 Basic-Algorithms
 
 C# Implementation of following algorithms:
-	1. Binary Search
-	2. Bubble Sort
-	3. Insertion Sort
-	4. Selection Sort
-	5. Merge Sort
-	6. Quick Sort
+
+1. Bubble Sort
+	
+2. Insertion Sort
+
+3. Selection Sort
+
+4. Merge Sort
+
+5. Quick Sort
