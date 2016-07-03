@@ -5,13 +5,15 @@ namespace BasicAlgorithms
     class Test
     {
         private static readonly Random random = new Random();
+		
         static void Main(string[] args)
         {
             var randomArray = GenerateRandomArray(10);
 
             Console.WriteLine("Random 10 Integer Array Generated...");
-            Console.Write("Unsorted Array: ");
-            PrintArray(randomArray);
+			
+            Console.Write("Random Array: ");
+			PrintArray(randomArray);
 
             DisplayConsole();
 
@@ -85,7 +87,7 @@ namespace BasicAlgorithms
 
             for (int i = 0; i < arraySize; i++)
             {
-                randomArray[i] = random.Next(100) + 1; /* array contains random number between 1 and 100 */
+                randomArray[i] = random.Next(100) + 1; /* array contains random numbers between 1 and 100 */
             }//for
             return randomArray;
         }//GenerateRandomArray
