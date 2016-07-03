@@ -5,21 +5,21 @@ namespace BasicAlgorithms
     class Test
     {
         private static readonly Random random = new Random();
-		
+
         static void Main(string[] args)
         {
             var randomArray = GenerateRandomArray(10);
 
             Console.WriteLine("Random 10 Integer Array Generated...");
-			
+
             Console.Write("Random Array: ");
-			PrintArray(randomArray);
+            PrintArray(randomArray);
 
-            DisplayConsole();
+            DisplaySortingAlgorithmSelectionConsole();
 
-            int sortSelection = Convert.ToInt32(Console.ReadLine());
+            int userSortingAlgorithmSelection = Convert.ToInt32(Console.ReadLine());
 
-            switch (sortSelection)
+            switch (userSortingAlgorithmSelection)
             {
                 case 1:
                     {
@@ -48,7 +48,7 @@ namespace BasicAlgorithms
                 case 5:
                     {
                         Console.WriteLine("Quick Sort Algorithm Preformed...\n");
-                        BasicSortingAlgorithms.QuickSort(randomArray,0,randomArray.Length);
+                        BasicSortingAlgorithms.QuickSort(randomArray, 0, randomArray.Length);
                         break;
                     }//case5 - QuickSort
             }//switch
@@ -59,9 +59,13 @@ namespace BasicAlgorithms
             {
                 Console.WriteLine("\n\nArray has been successfully sorted!");
             }//if
+            else
+            {
+                Console.WriteLine("\n\nArray was not successfully sorted...");
+            }//else
         }//Main
 
-        private static void DisplayConsole()
+        private static void DisplaySortingAlgorithmSelectionConsole()
         {
             Console.WriteLine("\n\nAlgorithm Tester...\n");
             Console.WriteLine("1 --> BubbleSort");
@@ -69,9 +73,8 @@ namespace BasicAlgorithms
             Console.WriteLine("3 --> SelectionSort");
             Console.WriteLine("4 --> MergeSort");
             Console.WriteLine("5 --> QuickSort\n");
-
             Console.Write("Selection Basic Algorithm to Preform... ");
-        }//DisplayConsole
+        }//DisplaySortingAlgorithmSelectionConsole
 
         private static void PrintArray(int[] randomArray)
         {
