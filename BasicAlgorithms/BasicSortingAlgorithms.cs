@@ -85,16 +85,16 @@ namespace BasicAlgorithms
             if (array.Length < 2)
                 return;
 
-            int midArr = array.Length / 2;
-            int[] leftArray = new int[midArr];
-            int[] rightArray = new int[array.Length - midArr];
+            int midArray = array.Length / 2;
+            int[] leftArray = new int[midArray];
+            int[] rightArray = new int[array.Length - midArray];
 
-            for (int i = 0; i < midArr; i++)
+            for (int i = 0; i < midArray; i++)
                 leftArray[i] = array[i];
 
             int index = 0;
 
-            for (int j = midArr; j < array.Length; j++)
+            for (int j = midArray; j < array.Length; j++)
                 rightArray[index++] = array[j];
 
             MergeSort(leftArray);
