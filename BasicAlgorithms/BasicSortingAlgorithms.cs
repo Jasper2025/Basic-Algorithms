@@ -26,13 +26,11 @@ namespace BasicAlgorithms
             {
                 int j = i;
                 int toInsert = unsortedArray[j];
-
                 while (j > 0 && unsortedArray[j - 1] > toInsert)
                 {
                     unsortedArray[j] = unsortedArray[j - 1];
                     j--;
                 }//while
-
                 unsortedArray[j] = toInsert;
             }//for
         }//InsertionSort
@@ -43,14 +41,13 @@ namespace BasicAlgorithms
             for (int i = 0; i < unsortedArray.Length; i++)
             {
                 int startIndex = i;
-
                 for (int j = i; j < unsortedArray.Length; j++)
                 {
                     if (unsortedArray[startIndex] > unsortedArray[j])
+                    {
                         startIndex = j;
-
+                    }//if
                 }//for
-
                 int temp = unsortedArray[i];
                 unsortedArray[i] = unsortedArray[startIndex];
                 unsortedArray[startIndex] = temp;
@@ -68,34 +65,48 @@ namespace BasicAlgorithms
             while (leftArrIndex < leftArray.Length && rightArrIndex < rightArray.Length)
             {
                 if (leftArray[leftArrIndex] <= rightArray[rightArrIndex])
+                {
                     combinedArray[combinedArrIndex++] = leftArray[leftArrIndex++];
+                } //if
                 else
+                {
                     combinedArray[combinedArrIndex++] = rightArray[rightArrIndex++];
+                }//else
             }//while
 
             while (leftArrIndex < leftArray.Length)
+            {
                 combinedArray[combinedArrIndex++] = leftArray[leftArrIndex++];
+            }//while
 
             while (rightArrIndex < rightArray.Length)
+            {
                 combinedArray[combinedArrIndex++] = rightArray[rightArrIndex++];
+            }//while
         }//Merge
 
         public static void MergeSort(int[] array)
         {
             if (array.Length < 2)
+            {
                 return;
+            }//if
 
-            int midArray = array.Length / 2;
-            int[] leftArray = new int[midArray];
-            int[] rightArray = new int[array.Length - midArray];
+            int midArr = array.Length / 2;
+            int[] leftArray = new int[midArr];
+            int[] rightArray = new int[array.Length - midArr];
 
-            for (int i = 0; i < midArray; i++)
+            for (int i = 0; i < midArr; i++)
+            {
                 leftArray[i] = array[i];
+            }//for
 
             int index = 0;
 
-            for (int j = midArray; j < array.Length; j++)
+            for (int j = midArr; j < array.Length; j++)
+            {
                 rightArray[index++] = array[j];
+            }//for
 
             MergeSort(leftArray);
             MergeSort(rightArray);
